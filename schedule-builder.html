@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="stylesheet" href="CSS/auth-modal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>منظم الجدول الدراسي | دليلك الأكاديمي</title>
+    <link rel="stylesheet" href="CSS/schedule-builder.css">
+</head>
+
+
+<body>
+
+    <!-- الهيدر الموحد -->
+    <header class="official-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="image/logox.png" alt="شعار المنصة" class="site-logo">
+                <span class="logo-text">دليلك الأكاديمي</span>
+            </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="campus-map.html">خريطة الجامعة</a></li>
+                    <li><a href="gpa-calculator.html">حاسبة المعدل</a></li>
+                    <li><a href="gpa-target.html">مخطط المعدل</a></li>
+                   <li><a href="https://www.ghirass-jo.com/" target="_blank">مصادر المواد</a></li>
+     <li><a href="schedule-builder.html" class="active">منظم الجدول</a></li>
+                </ul>
+            </nav>
+
+          
+        </div>
+    </header>
+
+    <main class="schedule-container">
+   <div class="schedule-header">
+            <h1 class="page-title">🗓️ منظم الجدول الدراسي</h1>
+            <p class="page-subtitle">قم بترتيب موادك وأنشطتك الأسبوعية وتنسيق أوقاتك بكل سهولة</p>
+        </div>
+        <div class="builder-layout">
+       
+            <aside class="form-section">
+                <h3>📝 إضافة مادة للجدول</h3>
+                
+                <div class="official-schedule-link">
+                    <p>للاطلاع على أرقام الشعب ومواعيدها الدقيقة:</p>
+                    <a href="https://services.just.edu.jo/courseschedule/" target="_blank" class="btn-university">
+                        🌐 بوابة الجدول الدراسي الرسمي
+                    </a>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- 1. اسم المادة (كتابة) -->
+                <div class="input-group">
+                    <label for="courseName">اسم المادة أو النشاط:</label>
+                    <input type="text" id="courseName" class="styled-input" placeholder="مثال: تصميم منطقي / دوام عمل..." required>
+                </div>
+
+                <!-- 2. أيام المحاضرة (خيارات متعددة) -->
+                <div class="input-group">
+                    <label>أيام المحاضرة:</label>
+                    <div class="days-checkboxes">
+                        <label><input type="checkbox" value="Sun" class="day-cb"> الأحد</label>
+                        <label><input type="checkbox" value="Mon" class="day-cb"> الإثنين</label>
+                        <label><input type="checkbox" value="Tue" class="day-cb"> الثلاثاء</label>
+                        <label><input type="checkbox" value="Wed" class="day-cb"> الأربعاء</label>
+                        <label><input type="checkbox" value="Thu" class="day-cb"> الخميس</label>
+                    </div>
+                </div>
+
+                <!-- 3. وقت البداية والنهاية -->
+                <div class="time-group">
+                    <div class="input-group">
+                        <label for="startTime">وقت البداية:</label>
+                        <input type="time" id="startTime" class="styled-input" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="endTime">وقت النهاية:</label>
+                        <input type="time" id="endTime" class="styled-input" required>
+                    </div>
+                </div>
+
+                <!-- 4. لون المادة -->
+                <div class="input-group">
+                    <label for="courseColor">تخصيص لون المادة:</label>
+                    <input type="color" id="courseColor" value="#2563eb">
+                </div>
+
+                <button type="button" onclick="addCustomCourse()" class="btn-add">إضافة للجدول ➕</button>
+
+                <!-- قائمة المواد المضافة للجدول -->
+                <div class="added-courses-list">
+                    <h4>الأنشطة في جدولك الحالي (<span id="coursesCount">0</span>)</h4>
+                    <ul id="coursesList"></ul>
+                </div>
+            </aside>
+
+            <!-- عرض الجدول الأسبوعي -->
+            <section class="grid-section">
+                <div class="table-responsive">
+                    <table class="schedule-table" id="scheduleTable">
+                        <thead>
+                            <tr>
+                                <th>الوقت</th>
+                                <th>الأحد</th>
+                                <th>الإثنين</th>
+                                <th>الثلاثاء</th>
+                                <th>الأربعاء</th>
+                                <th>الخميس</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timetableBody">
+                            <!-- يتم توليد الساعات بـ JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="official-footer">
+        <p>جميع الحقوق محفوظة © دليلك الأكاديمي</p>
+    </footer>
+
+    <script src="JS/schedule-builder.js"></script>
+
+
+</body>
+</html>
