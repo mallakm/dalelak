@@ -1,7 +1,8 @@
 /* ==========================================
    1. تنسيق الصفحة الرئيسي
    ========================================== */
-.map-page-container {
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+   .map-page-container {
     max-width: 1400px;
     width: 95%;
     margin: 2rem auto;
@@ -301,4 +302,16 @@
     .buildings-list {
         height: 420px;
     }
+}
+
+.map-container {
+  overflow: hidden;
+  touch-action: none;   /* بيخلي الكود يتحكم باللمس */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.map-container img {
+  max-width: none;
+  will-change: transform;
+  -webkit-user-drag: none;
 }

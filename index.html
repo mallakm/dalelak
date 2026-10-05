@@ -2,24 +2,26 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <link rel="stylesheet" href="CSS/auth-modal.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dalelak</title>
+    <title>دليلك الأكاديمي</title>
+    <!-- استدعاء خط Cairo الموحد لجميع عناصر الصفحة -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/auth-modal.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
 
-    <header class="official-header">
+    <!-- الهيدر العائم الخاص بالرئيسية -->
+    <header class="official-header home-header">
         <div class="header-container">
-            <!-- الشعار مع اسم المنصة -->
             <div class="logo-section">
                 <img src="image/logox.png" alt="شعار المنصة" class="site-logo">
                 <span class="logo-text">دليلك الأكاديمي</span>
             </div>
 
-            <!-- روابط الخدمات الأكاديمية الأهم للطلاب -->
             <nav class="navigation">
                 <ul>
                     <li><a href="index.html" class="active">الرئيسية</a></li>
@@ -29,41 +31,88 @@
                 </ul>
             </nav>
 
-            <!-- الأدوات الجانبية: زر الوضع الداكن وزر الدخول -->
-       
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle-btn" title="تبديل المظهر">
+                    <span id="themeIcon">☀️</span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <hr />
-
-    <section class="hero">
-        <!-- غلفنا الصورة بـ div وأعطيناها كلاس محدد للدمج -->
-        <div class="hero-image-wrapper">
-            <img src="image/intro to just.jpg" alt="Student study illustration" class="hero-image-right">
-        </div>
-
-        <div class="herosup">
+    <!-- الواجهة الرئيسية بالصورة والتنسيق الموحد -->
+<!-- واجهة البداية العصرية بدون صور مع عداد الزوار والإحصائيات -->
+    <section class="hero-banner">
+        <div class="hero-content">
             <h1 class="hero-title">
-                دليلك الأكاديمي لرحلة <span class="highlight">أسهل وأذكى</span> في الجامعة
+                من أول خطوة في الحرم الجامعي... <br>
+                إلى منصة <span class="highlight">التخرّج بامتياز</span>
             </h1>
 
-            <p class="intro">
-                بوابتك الأولى لرحلة جامعية أسهل وأذكى! أهلاً بك في منصتك الشاملة المصممة خصيصًا لتكون رفيقك الأكاديمي
-                والتعليمي في جامعة العلوم والتكنولوجيا الأردنية. سواء كنت تطلب خطوتك الأولى في الجبل أو تبحث عن الطريق
-                الأقصر للتميز، جمعنا لك كل ما تحتاجه في مكان واحد.
+            <p class="hero-intro">
+                كل ما يلزمك لتصنع مسيرتك بثقة وذكاء في مكان واحد: حسابات معدل دقيقة، صانع الجداول الذكي، دليل التسجيل الشامل، وخريطة الحرم التفاعلية. صُممت المنصة لتختصر وقتك وتكون رفيقك اليومي في جامعة العلوم والتكنولوجيا.
             </p>
 
-            <div class="button-container">
-                <!-- ربط الزر بـ id قسم الخدمات للتمرير التلقائي -->
-                <a href="#features" class="btn-start">ابدأ رحلتك الآن</a>
+            <div class="hero-actions">
+                <a href="#features" class="btn-primary-hero">⚡ استكشف الخدمات</a>
+                <a href="guide.html" class="btn-secondary-hero">🧭 دليل الطالب المستجد</a>
+            </div>
+
+            <!-- شبكة الإحصائيات وعداد الزوار -->
+            <div class="hero-stats">
+                <!-- عداد الزوار التفاعلي -->
+                <div class="stat-box">
+                    <span class="stat-icon">👥</span>
+                    <div class="stat-data">
+                        <span class="stat-number" id="visitorCount">0</span>
+                        <span class="stat-label">زوار المنصة</span>
+                    </div>
+                </div>
+
+                <!-- عدد الأدوات -->
+                <div class="stat-box">
+                    <span class="stat-icon">🛠️</span>
+                    <div class="stat-data">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">أدوات أكاديمية</span>
+                    </div>
+                </div>
+
+                <!-- التوافق الأكاديمي -->
+                <div class="stat-box">
+                    <span class="stat-icon">🎯</span>
+                    <div class="stat-data">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">نظام علامات التكنو (4.2)</span>
+                    </div>
+                </div>
+
+                <!-- إتاحة المنصة -->
+                <div class="stat-box">
+                    <span class="stat-icon">⚡</span>
+                    <div class="stat-data">
+                        <span class="stat-number">مجاني</span>
+                        <span class="stat-label">متاح لكل الطلاب</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- تبدأ بعدها كروت الخدمات مباشرة -->
 
     <section class="features-section" id="features">
         <h2 class="section-title">خدمات المنصة الشاملة</h2>
         <p class="section-subtitle">كل ما تحتاجه لرحلتك الأكاديمية والجامعية في مكان واحد</p>
         <div class="features-grid">
+
+            <a href="guide.html" class="feature-card-link">
+                <div class="feature-card">
+                    <span class="icon">🧭</span>
+                    <h3>دليل الطالب المستجد الشامل</h3>
+                    <p>تعرف على خطوات التسجيل، الدفع عبر إي فواتيركم وتغيير الشُعب، مع فيديوهات توضيحية للوصول للقاعات
+                        والتطبيقات الأساسية.</p>
+                </div>
+            </a>
 
             <a href="https://www.ghirass-jo.com/" target="_blank" class="feature-card-link">
                 <div class="feature-card">
@@ -167,7 +216,10 @@
     <footer class="official-footer">
         <p>جميع الحقوق محفوظة &copy; <span id="current-year"></span> دليلك الأكاديمي</p>
     </footer>
-   
+<script src="theme.js"></script>
+
+
+
 </body>
 
 </html>

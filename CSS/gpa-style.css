@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 /* ==========================================
    1. General & Base Styles
    ========================================== */
@@ -67,7 +66,7 @@ hr {
 }
 
 .logo-text {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     color: #f4ede2;
     font-size: 1.2rem;
     font-weight: 700;
@@ -89,7 +88,7 @@ hr {
 .navigation a {
     text-decoration: none;
     color: #b8afa4;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 19px;
     font-weight: 700;
     position: relative;
@@ -157,7 +156,7 @@ hr {
 }
 
 .hero-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #f4ede2;
@@ -166,7 +165,7 @@ hr {
 }
 
 .intro {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     color: #b8afa4;
     line-height: 1.8;
@@ -176,7 +175,7 @@ hr {
 }
 
 .highlight {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: inherit;
     font-weight: inherit;
     color: #d4a373;
@@ -211,14 +210,14 @@ hr {
 }
 
 .section-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 34px;
     color: #f4ede2;
     margin-bottom: 8px;
 }
 
 .section-subtitle {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #b8afa4;
     margin-bottom: 3rem;
@@ -255,7 +254,7 @@ hr {
 }
 
 .feature-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #f4ede2;
@@ -263,7 +262,7 @@ hr {
 }
 
 .feature-card p {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #b8afa4;
     line-height: 1.6;
@@ -287,14 +286,14 @@ hr {
 }
 
 .calc-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 32px;
     color: #d4a373;
     margin-bottom: 8px;
 }
 
 .calc-subtitle {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     color: #b8afa4;
     font-size: 18px;
 }
@@ -319,7 +318,7 @@ hr {
 
 .input-group label {
     display: block;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #f4ede2;
     margin-bottom: 6px;
@@ -339,7 +338,7 @@ hr {
 }
 
 .courses-table th {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     color: #f4ede2;
     font-size: 18px;
 }
@@ -354,7 +353,7 @@ hr {
     color: #f4ede2;
     font-size: 15px;
     outline: none;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 .input-field:focus, 
@@ -390,7 +389,7 @@ hr {
 }
 
 .result-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     color: #b8afa4;
     margin-bottom: 8px;
@@ -403,7 +402,7 @@ hr {
 }
 
 .gpa-rating {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 17px;
     color: #b8afa4;
     margin-top: 5px;
@@ -425,7 +424,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 .hours-card.highlight-hours {
@@ -448,7 +447,7 @@ hr {
    ========================================== */
 .btn-start {
     display: inline-block;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 19px;
     font-weight: 700;
     color: #1c1815;
@@ -464,7 +463,7 @@ hr {
 }
 
 .btn-portal {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     background-color: #28221d;
     color: #f4ede2;
     border: 1px solid #433830;
@@ -511,7 +510,7 @@ hr {
 .btn-add, 
 .btn-calc, 
 .btn-remove {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 17px;
     font-weight: 700;
     padding: 10px 20px;
@@ -611,7 +610,7 @@ hr {
 }
 
 .official-footer p {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     color: #b8afa4;
     margin: 0;

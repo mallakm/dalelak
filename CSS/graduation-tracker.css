@@ -1,7 +1,8 @@
 /* ==========================================
    1. تنسيق الصفحة الرئيسي
    ========================================== */
-.tracker-container {
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+   .tracker-container {
     max-width: 1100px;
     width: 95%;
     margin: 2.5rem auto;
@@ -14,14 +15,14 @@
 }
 
 .tracker-header .page-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 34px;
     color: #f4ede2;
     margin-bottom: 8px;
 }
 
 .tracker-header .page-desc {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #b8afa4;
 }
@@ -38,7 +39,7 @@
 }
 
 .input-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 22px;
     color: #f4ede2;
     margin-bottom: 1.3rem;
@@ -58,7 +59,7 @@
 }
 
 .input-group label {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #f4ede2;
 }
@@ -70,7 +71,7 @@
     border: 1px solid #433830;
     border-radius: 8px;
     color: #f4ede2;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s ease;
@@ -81,7 +82,7 @@
 }
 
 .btn-calc-tracker {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 19px;
     font-weight: 700;
     color: #1c1815;
@@ -171,7 +172,7 @@
 }
 
 .progress-label {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #b8afa4;
 }
@@ -196,7 +197,7 @@
 }
 
 .stat-label {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #b8afa4;
 }
@@ -211,7 +212,7 @@
 }
 
 .countdown-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 22px;
     color: #f4ede2;
     margin-bottom: 1.3rem;
@@ -242,13 +243,13 @@
 }
 
 .countdown-unit {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #b8afa4;
 }
 
 .countdown-note {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #b8afa4;
 }
@@ -262,7 +263,7 @@
 }
 
 .roadmap-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 22px;
     color: #f4ede2;
     margin-bottom: 1.5rem;
@@ -296,7 +297,7 @@
 }
 
 .roadmap-year-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 17px;
     font-weight: bold;
     color: #f4ede2;
@@ -304,7 +305,7 @@
 }
 
 .roadmap-year-status {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 14px;
     color: #b8afa4;
 }

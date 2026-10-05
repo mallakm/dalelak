@@ -1,0 +1,526 @@
+/* ==========================================
+   1. زر تبديل الثيم المشترك
+   ========================================== */
+.theme-toggle-btn {
+    background-color: #28221d;
+    border: 1px solid #433830;
+    color: #f4ede2;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #d4a373;
+    color: #171311;
+    transform: rotate(15deg) scale(1.05);
+}
+
+.official-header {
+    z-index: 9999 !important;
+}
+
+/* ==========================================
+   2. ألوان الوضع الصباحي (Light Theme) لكامل الموقع
+   ========================================== */
+body.light-theme {
+    background-color: #f5f1eb !important;
+    color: #1f1915 !important;
+}
+
+/* الهيدر وشريط التنقل */
+body.light-theme .official-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .logo-text,
+body.light-theme .page-title,
+body.light-theme .section-title,
+body.light-theme .phase-title,
+body.light-theme h1, 
+body.light-theme h2, 
+body.light-theme h3 {
+    color: #1f1915 !important;
+}
+
+body.light-theme .navigation a {
+    color: #5c4c40 !important;
+}
+
+body.light-theme .navigation a:hover,
+body.light-theme .navigation a.active {
+    color: #9c6328 !important;
+}
+
+/* بطاقات الكروت الأساسية وحاويات النماذج */
+body.light-theme .feature-card,
+body.light-theme .guide-card,
+body.light-theme .main-phase-card,
+body.light-theme .step-item,
+body.light-theme .current-status-card,
+body.light-theme .scenario-card,
+body.light-theme .whatif-result-box,
+body.light-theme .calculator-container,
+body.light-theme .input-card,
+body.light-theme .progress-card,
+body.light-theme .countdown-card,
+body.light-theme .roadmap-card,
+body.light-theme .timer-card,
+body.light-theme .settings-card,
+body.light-theme .form-section,
+body.light-theme .grid-section,
+body.light-theme .feedback-form {
+    background-color: #ffffff !important;
+    border-color: #dfd4c7 !important;
+    color: #1f1915 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* الصناديق الداخلية في صفحة الدليل */
+body.light-theme .guide-card div[style*="background-color"] {
+    background-color: #faf7f2 !important;
+    border-color: #e0d5c8 !important;
+}
+
+body.light-theme h4,
+body.light-theme .guide-card h4 {
+    color: #9c6328 !important;
+}
+
+/* نصوص القوائم والفقرات */
+body.light-theme p,
+body.light-theme li,
+body.light-theme ol li,
+body.light-theme ul li,
+body.light-theme .steps-list li,
+body.light-theme .bullet-list li,
+body.light-theme .app-brief,
+body.light-theme .phase-subtitle,
+body.light-theme .step-body p,
+body.light-theme .modal-body li,
+body.light-theme label {
+    color: #382e27 !important;
+}
+
+body.light-theme strong,
+body.light-theme b {
+    color: #110e0c !important;
+}
+
+/* أرقام الخطوات */
+body.light-theme .step-number {
+    background-color: #f5f1eb !important;
+    border-color: #9c6328 !important;
+    color: #9c6328 !important;
+}
+
+/* الروابط وأزرار الإجراءات */
+body.light-theme a {
+    color: #8c531b !important;
+}
+
+body.light-theme .guide-card a {
+    color: #8c531b !important;
+    font-weight: bold;
+}
+
+/* حقول الإدخال والاختيار في جميع الصفحات */
+body.light-theme .input-field,
+body.light-theme .select-field,
+body.light-theme .styled-input,
+body.light-theme .styled-select {
+    background-color: #faf7f2 !important;
+    border-color: #dfd4c7 !important;
+    color: #1f1915 !important;
+}
+
+/* صناديق التنبيه */
+body.light-theme .alert-box {
+    background-color: #fff9ee !important;
+    border: 1px solid #ebd9b8 !important;
+    border-right: 4px solid #c28836 !important;
+    color: #382e27 !important;
+}
+
+body.light-theme .concept-callout {
+    background-color: #faf5ed !important;
+    border-color: #dfd4c7 !important;
+    border-right-color: #9c6328 !important;
+}
+
+/* أزرار الخدمات */
+body.light-theme .theme-toggle-btn {
+    background-color: #ece3d7 !important;
+    border-color: #d1c0ae !important;
+    color: #1f1915 !important;
+}
+
+body.light-theme .step-action-btn,
+body.light-theme .store-btn,
+body.light-theme .hall-btn,
+body.light-theme .open-modal-btn,
+body.light-theme .btn-add {
+    background-color: #faf7f2 !important;
+    color: #8c531b !important;
+    border-color: #d8c9b8 !important;
+}
+
+body.light-theme .step-action-btn:hover,
+body.light-theme .store-btn:hover,
+body.light-theme .hall-btn:hover,
+body.light-theme .open-modal-btn:hover,
+body.light-theme .btn-add:hover {
+    background-color: #8c531b !important;
+    color: #ffffff !important;
+}
+
+/* النوافذ المنبثقة */
+body.light-theme .modal-box {
+    background-color: #ffffff !important;
+    border-color: #9c6328 !important;
+    color: #1f1915 !important;
+}
+
+/* ==========================================
+   3. إصلاح كرت استشر المرشدين (guide.html)
+   ========================================== */
+body.light-theme .guide-card.highlight-card {
+    background: #f7eee2 !important;
+    background-color: #f7eee2 !important;
+    border: 1px solid #c28836 !important;
+}
+
+body.light-theme .guide-card.highlight-card * {
+    color: #2c2119 !important;
+}
+
+body.light-theme .guide-card.highlight-card h3 {
+    color: #9c6328 !important;
+}
+
+/* ==========================================
+   4. إصلاح ألوان صفحة الخريطة (campus-map.html)
+   ========================================== */
+body.light-theme .map-view-box {
+    background-color: #f5f1eb !important;
+    border-color: #dfd4c7 !important;
+}
+
+body.light-theme .map-notice-bar {
+    background-color: #ece3d7 !important;
+    color: #2c2520 !important;
+    border-color: #dfd4c7 !important;
+}
+
+body.light-theme .building-card {
+    background-color: #ffffff !important;
+    border: 1px solid #dfd4c7 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-theme .building-card:hover {
+    background-color: #faf6f0 !important;
+    border-color: #d4a373 !important;
+}
+
+body.light-theme .building-card h3 {
+    color: #9c6328 !important;
+}
+
+body.light-theme .building-card p {
+    color: #4a3b30 !important;
+}
+
+body.light-theme .direct-map-btn {
+    color: #8c531b !important;
+    font-weight: bold !important;
+}
+
+/* ==========================================
+   5. إصلاحات الجداول ومنظم الجدول (schedule-builder)
+   ========================================== */
+body.light-theme .schedule-table th,
+body.light-theme .whatif-table th,
+body.light-theme .courses-table th {
+    background-color: #faf7f2 !important;
+    color: #9c6328 !important;
+    border-color: #dfd4c7 !important;
+}
+
+body.light-theme .schedule-table td,
+body.light-theme .whatif-table td,
+body.light-theme .courses-table td {
+    border-color: #ebdcd0 !important;
+    color: #2c2520 !important;
+}
+
+/* تثبيت لون نصوص المواد المضافة في منظم الجدول باللون الأبيض */
+.course-card, 
+.course-card * {
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   إصلاح شامل لصناديق الأدوات الداخلية في الوضع الصباحي (Light Theme)
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. حاسبة المعدل ومخطط المعدل (gpa-calculator & gpa-target)
+   ------------------------------------------------------------- */
+/* الصندوق الأسود الداخلي الظاهر في صورتك */
+body.light-theme .cumulative-section {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .cumulative-section label,
+body.light-theme .cumulative-inputs label {
+    color: #2c2520 !important;
+    font-weight: 600;
+}
+
+/* بطاقات النتائج والمؤشرات */
+body.light-theme .result-box,
+body.light-theme #target-result-box {
+    background-color: #ffffff !important;
+    border-color: #dfd4c7 !important;
+}
+
+body.light-theme .result-card,
+body.light-theme .detail-card,
+body.light-theme .hours-card {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .gauge-section {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .gauge-header {
+    color: #2c2520 !important;
+}
+
+body.light-theme .gauge-bar-bg {
+    background-color: #e5dacd !important;
+}
+
+body.light-theme .detail-card h4,
+body.light-theme .hours-label {
+    color: #6e5e52 !important;
+}
+
+body.light-theme .detail-card p,
+body.light-theme .gpa-rating {
+    color: #2c2520 !important;
+}
+
+body.light-theme .target-advice {
+    background-color: #faf7f2 !important;
+    border-right: 4px solid #c28836 !important;
+    color: #2c2520 !important;
+}
+
+/* -------------------------------------------------------------
+   2. عدّاد التخرج (graduation-tracker)
+   ------------------------------------------------------------- */
+body.light-theme .tracker-container .input-card,
+body.light-theme .tracker-container .progress-card,
+body.light-theme .tracker-container .countdown-card,
+body.light-theme .tracker-container .roadmap-card {
+    background-color: #ffffff !important;
+    border: 1px solid #dfd4c7 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.light-theme .ring-bg {
+    stroke: #e8ded4 !important;
+}
+
+body.light-theme #progressPercent {
+    color: #2c2520 !important;
+}
+
+body.light-theme .countdown-box {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .countdown-unit,
+body.light-theme .countdown-note,
+body.light-theme .progress-label,
+body.light-theme .stat-label {
+    color: #6e5e52 !important;
+}
+
+body.light-theme .roadmap-year {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .roadmap-year-title {
+    color: #2c2520 !important;
+}
+
+/* -------------------------------------------------------------
+   3. مؤقت المذاكرة (pomodoro-timer)
+   ------------------------------------------------------------- */
+body.light-theme .timer-card,
+body.light-theme .settings-card {
+    background-color: #ffffff !important;
+    border: 1px solid #dfd4c7 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.light-theme .mode-tab {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+    color: #6e5e52 !important;
+}
+
+body.light-theme .mode-tab.active {
+    background-color: #d4a373 !important;
+    color: #1c1815 !important;
+    border-color: #d4a373 !important;
+}
+
+body.light-theme #timeLeft {
+    color: #2c2520 !important;
+}
+
+body.light-theme .timer-mode-label,
+body.light-theme .sound-desc {
+    color: #6e5e52 !important;
+}
+
+body.light-theme .ctrl-btn.secondary {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+    color: #2c2520 !important;
+}
+
+body.light-theme .session-counter {
+    color: #2c2520 !important;
+}
+
+body.light-theme .btn-apply,
+body.light-theme .btn-sound {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+    color: #8c531b !important;
+}
+
+/* -------------------------------------------------------------
+   4. منظم الجدول الدراسي (schedule-builder)
+   ------------------------------------------------------------- */
+body.light-theme .form-section,
+body.light-theme .grid-section {
+    background-color: #ffffff !important;
+    border: 1px solid #dfd4c7 !important;
+}
+
+body.light-theme .days-checkboxes label {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+    color: #2c2520 !important;
+}
+
+body.light-theme .added-courses-list li {
+    background-color: #faf7f2 !important;
+    border: 1px solid #dfd4c7 !important;
+    color: #2c2520 !important;
+}
+
+body.light-theme .official-schedule-link {
+    background-color: rgba(212, 163, 115, 0.08) !important;
+    border-color: #d4a373 !important;
+}
+/* ==============================================================
+   الهيدر العائم والواجهة في الوضع الصباحي
+   ============================================================== */
+body.light-theme .official-header.home-header {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border-color: rgba(194, 136, 54, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-theme .hero-bg-overlay {
+    filter: blur(5px) brightness(0.9) contrast(0.95);
+    opacity: 0.32;
+}
+
+body.light-theme .hero-banner::after {
+    background: linear-gradient(
+        180deg, 
+        rgba(245, 241, 235, 0.5) 0%, 
+        rgba(245, 241, 235, 0.85) 60%, 
+        #f5f1eb 100%
+    );
+}
+
+body.light-theme .hero-title {
+    color: #1f1915 !important;
+    text-shadow: none;
+}
+
+body.light-theme .hero-title .highlight {
+    background: linear-gradient(120deg, #9c6328, #c28836);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .hero-intro {
+    color: #4a3b30 !important;
+    text-shadow: none;
+}
+
+body.light-theme .hero-badge {
+    background: rgba(194, 136, 54, 0.12);
+    border-color: rgba(194, 136, 54, 0.3);
+}
+
+body.light-theme .hero-badge span {
+    color: #8c531b;
+}
+
+body.light-theme .btn-secondary-hero {
+    background: #ffffff;
+    color: #2c2520;
+    border-color: #dfd4c7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .feature-pill {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: #dfd4c7;
+    color: #382e27;
+}
+/* ==============================================================
+   بطاقات الإحصائيات في الوضع الصباحي
+   ============================================================== */
+body.light-theme .hero-banner {
+    background: radial-gradient(circle at 50% 25%, rgba(194, 136, 54, 0.1) 0%, #f5f1eb 75%) !important;
+}
+
+body.light-theme .stat-box {
+    background: #ffffff !important;
+    border-color: #dfd4c7 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.light-theme .stat-number {
+    color: #9c6328 !important;
+}
+
+body.light-theme .stat-label {
+    color: #5c4c40 !important;
+}

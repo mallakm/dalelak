@@ -1,7 +1,8 @@
 /* ==========================================
    1. تنسيق الصفحة الرئيسية
    ========================================== */
-.whatif-container {
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+   .whatif-container {
     max-width: 1200px;
     width: 95%;
     margin: 2.5rem auto;
@@ -14,14 +15,14 @@
 }
 
 .whatif-header .page-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 34px;
     color: #f4ede2;
     margin-bottom: 8px;
 }
 
 .whatif-header .page-desc {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #b8afa4;
     max-width: 800px;
@@ -40,7 +41,7 @@
 }
 
 .current-status-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     color: #f4ede2;
     margin-bottom: 1.2rem;
@@ -59,7 +60,7 @@
 }
 
 .input-group label {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 15px;
     color: #f4ede2;
 }
@@ -71,7 +72,7 @@
     border: 1px solid #433830;
     border-radius: 8px;
     color: #f4ede2;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     outline: none;
 }
@@ -92,7 +93,7 @@
 }
 
 .scenario-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     color: #f4ede2;
     margin-bottom: 1.2rem;
@@ -112,7 +113,7 @@
 }
 
 .whatif-table th {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     color: #f4ede2;
     font-size: 15px;
 }
@@ -126,7 +127,7 @@
     color: #f4ede2;
     font-size: 14px;
     outline: none;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 .select-field:disabled {
@@ -147,7 +148,7 @@
 .btn-add,
 .btn-calc,
 .btn-remove {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     font-weight: 700;
     padding: 10px 20px;
@@ -226,7 +227,7 @@
 }
 
 .compare-card h4 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     color: #b8afa4;
     margin-bottom: 8px;
@@ -245,7 +246,7 @@
 }
 
 .impact-text {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #f4ede2;
     text-align: center;

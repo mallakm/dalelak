@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollTop = slider.scrollTop;
         });
 
+       
+
         slider.addEventListener('touchend', () => {
             isDown = false;
         });

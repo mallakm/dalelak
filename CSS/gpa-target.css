@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 
 /* ==========================================
    1. General & Base Styles
@@ -61,7 +61,7 @@ a {
 }
 
 .logo-text {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     color: #f4ede2;
     font-size: 1.2rem;
     font-weight: 700;
@@ -83,7 +83,7 @@ a {
 .navigation a {
     text-decoration: none;
     color: #b8afa4;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 19px;
     font-weight: 700;
     position: relative;
@@ -142,14 +142,14 @@ a {
 }
 
 .calc-title {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 34px;
     color: #f4ede2;
     margin-bottom: 8px;
 }
 
 .calc-subtitle {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #b8afa4;
 }
@@ -175,7 +175,7 @@ a {
 }
 
 .input-group label {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 17px;
     color: #f4ede2;
 }
@@ -187,7 +187,7 @@ a {
     border: 1px solid #433830;
     border-radius: 8px;
     color: #f4ede2;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 17px;
     outline: none;
     transition: all 0.25s ease;
@@ -204,7 +204,7 @@ a {
 }
 
 .btn-calc {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #1c1815;
@@ -251,7 +251,7 @@ a {
 }
 
 .result-card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
     color: #b8afa4;
     margin-bottom: 8px;
@@ -266,7 +266,7 @@ a {
 }
 
 .gpa-rating {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #f4ede2;
 }
@@ -283,7 +283,7 @@ a {
 .gauge-header {
     display: flex;
     justify-content: space-between;
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 17px;
     margin-bottom: 10px;
     color: #f4ede2;
@@ -326,21 +326,21 @@ a {
 }
 
 .detail-card h4 {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     color: #b8afa4;
     margin-bottom: 4px;
 }
 
 .detail-card p {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #f4ede2;
 }
 
 .target-advice {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 18px;
     color: #f4ede2;
     line-height: 1.7;
@@ -363,7 +363,7 @@ a {
 }
 
 .official-footer p {
-    font-family: 'Amiri', serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     color: #b8afa4;
     margin: 0;

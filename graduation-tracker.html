@@ -8,6 +8,7 @@
     <title>تتبع الخطة وعدّاد التخرج | دليلك الأكاديمي</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/graduation-tracker.css">
+    <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
@@ -25,20 +26,22 @@
                     <li><a href="campus-map.html">خريطة الجامعة</a></li>
                     <li><a href="gpa-calculator.html">حاسبة المعدل</a></li>
                     <li><a href="gpa-target.html">مخطط المعدل</a></li>
-                   <li><a href="https://www.ghirass-jo.com/" target="_blank">مصادر المواد</a></li>
+                    <li><a href="https://www.ghirass-jo.com/" target="_blank">مصادر المواد</a></li>
                     <li><a href="pomodoro-timer.html">مؤقت المذاكرة</a></li>
                     <li><a href="graduation-tracker.html" class="active">عدّاد التخرج</a></li>
                 </ul>
             </nav>
 
-       
+
         </div>
+
     </header>
 
     <main class="tracker-container">
         <div class="tracker-header">
             <h1 class="page-title">🎓 تتبع الخطة وعدّاد التخرج</h1>
-            <p class="page-desc">أدخل بياناتك الأكاديمية وتابع نسبة إنجازك، الساعات المتبقية، وعدد الأيام حتى التخرج.</p>
+            <p class="page-desc">أدخل بياناتك الأكاديمية وتابع نسبة إنجازك، الساعات المتبقية، وعدد الأيام حتى التخرج.
+            </p>
         </div>
 
         <!-- نموذج إدخال البيانات -->
@@ -47,22 +50,26 @@
             <div class="input-grid">
                 <div class="input-group">
                     <label for="totalHours">إجمالي ساعات الخطة الكلية</label>
-                    <input type="number" id="totalHours" class="input-field" min="1" placeholder="مثال: 132" value="132">
+                    <input type="number" id="totalHours" class="input-field" min="1" placeholder="مثال: 132"
+                        value="132">
                 </div>
 
                 <div class="input-group">
                     <label for="completedHours">الساعات المنجزة حتى الآن</label>
-                    <input type="number" id="completedHours" class="input-field" min="0" placeholder="مثال: 60" value="60">
+                    <input type="number" id="completedHours" class="input-field" min="0" placeholder="مثال: 60"
+                        value="60">
                 </div>
 
                 <div class="input-group">
                     <label for="currentHours">الساعات المسجلة هذا الفصل</label>
-                    <input type="number" id="currentHours" class="input-field" min="0" placeholder="مثال: 15" value="15">
+                    <input type="number" id="currentHours" class="input-field" min="0" placeholder="مثال: 15"
+                        value="15">
                 </div>
 
                 <div class="input-group">
                     <label for="hoursPerSemester">متوسط الساعات بكل فصل مستقبلي</label>
-                    <input type="number" id="hoursPerSemester" class="input-field" min="1" placeholder="مثال: 15" value="15">
+                    <input type="number" id="hoursPerSemester" class="input-field" min="1" placeholder="مثال: 15"
+                        value="15">
                 </div>
 
                 <div class="input-group">
@@ -152,6 +159,8 @@
     </footer>
 
     <script src="JS/graduation-tracker.js"></script>
-</body>
+
+    <script src="theme.js"></script>
+    </body>
 
 </html>
