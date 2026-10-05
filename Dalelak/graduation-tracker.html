@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <link rel="stylesheet" href="CSS/auth-modal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تتبع الخطة وعدّاد التخرج | دليلك الأكاديمي</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/graduation-tracker.css">
+</head>
+
+<body>
+
+    <header class="official-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="image/logox.png" alt="شعار المنصة" class="site-logo">
+                <span class="logo-text">دليلك الأكاديمي</span>
+            </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="campus-map.html">خريطة الجامعة</a></li>
+                    <li><a href="gpa-calculator.html">حاسبة المعدل</a></li>
+                    <li><a href="gpa-target.html">مخطط المعدل</a></li>
+                   <li><a href="https://www.ghirass-jo.com/" target="_blank">مصادر المواد</a></li>
+                    <li><a href="pomodoro-timer.html">مؤقت المذاكرة</a></li>
+                    <li><a href="graduation-tracker.html" class="active">عدّاد التخرج</a></li>
+                </ul>
+            </nav>
+
+       
+        </div>
+    </header>
+
+    <main class="tracker-container">
+        <div class="tracker-header">
+            <h1 class="page-title">🎓 تتبع الخطة وعدّاد التخرج</h1>
+            <p class="page-desc">أدخل بياناتك الأكاديمية وتابع نسبة إنجازك، الساعات المتبقية، وعدد الأيام حتى التخرج.</p>
+        </div>
+
+        <!-- نموذج إدخال البيانات -->
+        <section class="input-card">
+            <h3>📋 بيانات خطتك الدراسية</h3>
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="totalHours">إجمالي ساعات الخطة الكلية</label>
+                    <input type="number" id="totalHours" class="input-field" min="1" placeholder="مثال: 132" value="132">
+                </div>
+
+                <div class="input-group">
+                    <label for="completedHours">الساعات المنجزة حتى الآن</label>
+                    <input type="number" id="completedHours" class="input-field" min="0" placeholder="مثال: 60" value="60">
+                </div>
+
+                <div class="input-group">
+                    <label for="currentHours">الساعات المسجلة هذا الفصل</label>
+                    <input type="number" id="currentHours" class="input-field" min="0" placeholder="مثال: 15" value="15">
+                </div>
+
+                <div class="input-group">
+                    <label for="hoursPerSemester">متوسط الساعات بكل فصل مستقبلي</label>
+                    <input type="number" id="hoursPerSemester" class="input-field" min="1" placeholder="مثال: 15" value="15">
+                </div>
+
+                <div class="input-group">
+                    <label for="graduationDate">تاريخ التخرج المتوقع</label>
+                    <input type="date" id="graduationDate" class="input-field">
+                </div>
+
+                <div class="input-group">
+                    <label for="planYears">عدد سنوات الخطة الدراسية</label>
+                    <select id="planYears" class="input-field">
+                        <option value="auto" selected>تلقائي (يُقترح حسب عدد الساعات)</option>
+                        <option value="3">3 سنوات</option>
+                        <option value="4">4 سنوات</option>
+                        <option value="5">5 سنوات</option>
+                        <option value="6">6 سنوات</option>
+                        <option value="7">7 سنوات</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="calculateBtn" class="btn-calc-tracker">احسب خطتي</button>
+        </section>
+
+        <!-- صندوق النتائج -->
+        <section class="results-section" id="resultsSection">
+
+            <!-- بطاقة النسبة والتقدم -->
+            <div class="progress-card">
+                <div class="progress-circle-wrapper">
+                    <svg class="progress-ring" viewBox="0 0 200 200">
+                        <circle class="ring-bg" cx="100" cy="100" r="88"></circle>
+                        <circle class="ring-fill" id="progressRing" cx="100" cy="100" r="88"></circle>
+                    </svg>
+                    <div class="progress-text">
+                        <span id="progressPercent">0%</span>
+                        <span class="progress-label">من الخطة</span>
+                    </div>
+                </div>
+
+                <div class="progress-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="statCompleted">0</span>
+                        <span class="stat-label">ساعة منجزة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="statRemaining">0</span>
+                        <span class="stat-label">ساعة متبقية</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="statSemesters">0</span>
+                        <span class="stat-label">فصل متبقي تقريباً</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة العدّاد التنازلي -->
+            <div class="countdown-card">
+                <h3>⏳ العدّ التنازلي للتخرج</h3>
+                <div class="countdown-grid" id="countdownGrid">
+                    <div class="countdown-box">
+                        <span class="countdown-num" id="daysNum">--</span>
+                        <span class="countdown-unit">يوم</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-num" id="weeksNum">--</span>
+                        <span class="countdown-unit">أسبوع</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-num" id="monthsNum">--</span>
+                        <span class="countdown-unit">شهر تقريباً</span>
+                    </div>
+                </div>
+                <p class="countdown-note" id="countdownNote">حدد تاريخ التخرج المتوقع لعرض العدّاد.</p>
+            </div>
+
+            <!-- خط سير السنوات الدراسية -->
+            <div class="roadmap-card">
+                <h3>🛤️ مسار سنوات دراستك</h3>
+                <div class="roadmap-track" id="roadmapTrack"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="official-footer">
+        <p>جميع الحقوق محفوظة &copy; <span id="current-year"></span> دليلك الأكاديمي</p>
+    </footer>
+
+    <script src="JS/graduation-tracker.js"></script>
+</body>
+
+</html>
