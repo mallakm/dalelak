@@ -524,3 +524,24 @@ body.light-theme .stat-number {
 body.light-theme .stat-label {
     color: #5c4c40 !important;
 }
+
+/* تنسيق إشعار الحقوق لملك محمد */
+.credit-toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1c1815;
+    border: 1px solid #d4a373;
+    color: #f4ede2;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    font-size: 16px;
+    z-index: 9999;
+    transform: translateX(150%); /* إخفاء الإشعار خارج الشاشة يميناً */
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.credit-toast.show {
+    transform: translateX(0); /* إدخال الإشعار للشاشة */
+}

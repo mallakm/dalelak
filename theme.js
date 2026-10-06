@@ -75,4 +75,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, stepTime);
     }
+
+    // ==========================================
+    // إشعار حقوق ملك محمد (يظهر عند كل تحديث للرئيسية)
+    // ==========================================
+    const creditToast = document.getElementById('creditToast');
+    
+    // سيعمل الكود فقط إذا كان العنصر موجوداً (أي في الصفحة الرئيسية)
+    if (creditToast) {
+        
+        // إظهار الإشعار بعد ثانيتين من فتح الصفحة
+        setTimeout(() => {
+            creditToast.classList.add('show');
+        }, 2000);
+
+        // إخفاء الإشعار بعد 6 ثوانٍ
+        setTimeout(() => {
+            creditToast.classList.remove('show');
+        }, 8000);
+    }
 });
