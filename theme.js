@@ -32,27 +32,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
+
     // ==========================================
-    // عداد الزوار الذكي وحركة تصاعد الأرقام
-    // ==========================================
-  // ==========================================
     // عداد الزوار الحقيقي والسحابي الموحد
     // ==========================================
+    // هذا هو السطر الذي كان مفقوداً في الكود الخاص بك:
     const visitorEl = document.getElementById('visitorCount');
+
+    // نضع الـ fetch داخل شرط للتأكد من وجود العنصر في الصفحة الحالية
     if (visitorEl) {
-        // نطلب من السيرفر زيادة العداد بمقدار 1 وجلب المجموع الكلي الحقيقي
-        // ملاحظة: يمكنك تغيير 'dalelak-just-2026' لأي اسم مفتاح خاص بموقعك
-        fetch('https://api.counterapi.dev/v1/dalelak-just-2026/visits/up')
-            .then(res => res.json())
-            .then(data => {
-                if (data && data.count) {
-                    animateCounter(visitorEl, data.count);
-                }
-            })
-            .catch(() => {
-                // رقم احتياطي يظهر فقط في حال تعطل اتصال الإنترنت
-                visitorEl.textContent = '1,500+';
-            });
+        fetch('https://abacus.jasoncameron.dev/hit/dalelak-just-2026/visits')
+        .then(res => {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.json();
+        })
+        .then(data => {
+            const n = Number(data.value);
+            if (Number.isFinite(n)) {
+                animateCounter(visitorEl, n);
+            } else {
+                throw new Error('no value in response');
+            }
+        })
+        .catch(err => {
+            console.error('Counter error:', err);
+            visitorEl.textContent = '1,500+'; // إظهار رقم تقريبي لو تعطل الإنترنت بدلاً من الصفر
+        });
     }
 
     // حركة تصاعدية سلسة للرقم عند فتح الصفحة
